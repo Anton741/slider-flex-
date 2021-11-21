@@ -1,0 +1,40 @@
+body{
+  background-color:rgb(19, 16, 16)
+}
+.container{
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slide{
+  height: 80vh;
+  flex: 1;
+  margin: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 500ms ease-in;
+  border-radius: 20px;
+  padding: 0px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slide h3{
+  color: aliceblue;
+  font-size: 300;
+  position:absolute;
+  bottom: 20px;
+  opacity: 0;
+}
+
+.slide.active{
+  flex: 10;
+}
+.slide.active h3{
+  opacity: 1;
+  transition: opacity 600ms ease-out;
+}
